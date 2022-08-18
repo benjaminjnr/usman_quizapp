@@ -18,7 +18,7 @@ spec:
         - name: nginx
           image: newacrdemo.azurecr.io/comp_quizapp:latest
           ports:
-            - containerPort: 80
+            - containerPort: 30289
 ---
 apiVersion: v1
 kind: Service
@@ -32,4 +32,4 @@ spec:
     app: comp_quizapp
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 30289
